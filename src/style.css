@@ -1,0 +1,18 @@
+.container{
+    display: flex;
+    height: 60px;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.nav-frame{
+    background-color: white;
+    height: 60px;
+}
+
+hr{
+    margin: 0;
+    border-style: solid;
+    border-color: grey;
+    height: 0.5px;
+}

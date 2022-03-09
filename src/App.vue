@@ -6,20 +6,17 @@
 </div> 
 <hr>
   <main>
-    
+    <Post/>
   </main>
 </template>
 
 <script>
-
-
+import Post from './Post';
 export default {
-  name: 'App',
-   data(){
-    return{
-      
+    name: "App",
+    components: {
+      Post,
     }
-  }
 }
 </script>
 

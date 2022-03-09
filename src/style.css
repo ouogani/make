@@ -1,18 +1,37 @@
 .container{
-    display: flex;
     height: 60px;
+    padding: 10px;
+}
+
+.nav-frame{
     align-items: center;
-    padding-top: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+nav{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.search{
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
 }
 
 .nav-frame{
     background-color: white;
     height: 60px;
+    width: 100%;
+    justify-content: space-between;
 }
 
-hr{
-    margin: 0;
-    border-style: solid;
-    border-color: grey;
-    height: 0.5px;
-}

@@ -1,20 +1,17 @@
 .container{
-    height: 60px;
-    padding: 10px;
+    padding-top: 10px;
+    
 }
-
-.nav-frame{
-    align-items: center;
+.nav-box{
+    background-color: white;
     border-bottom: 1px solid #eee;
+    height: 60px;
+    width: 100vw;
+    position: fixed;
 }
 
-nav{
-    display: flex;
-    justify-content: flex-start;
-}
 
 .search{
-    margin-top: 5px;
     display: flex;
     justify-content: center;
 }
@@ -22,16 +19,23 @@ nav{
 
 .left{
     float: left;
+    padding: 0;
+    margin-left: 20px;
 }
 
 .right{
     float: right;
 }
 
-.nav-frame{
+html{
     background-color: white;
-    height: 60px;
-    width: 100%;
-    justify-content: space-between;
 }
+
+.main{
+    background-color: none;
+
+}
+
+
+
 

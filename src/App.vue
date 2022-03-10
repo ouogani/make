@@ -22,14 +22,18 @@
     </div>
 </div>
 
-<div class="container main">
 
+
+<div class="story">
+스토리가 들어갈 자리
+</div>
+    
+
+<div class="container">
+</div>
     <Post :게시물="게시물[0]"/>
     <Post :게시물="게시물[1]"/>
     <Post :게시물="게시물[2]"/>
-
-
-</div>
 </div>
   
 </template>
@@ -111,4 +115,19 @@ input:focus { outline: none; }
   background-color: rgb(247, 247, 247);
 }
 
+.story{
+  height: 100px;
+  width: 500px;
+  
+  position: absolute;
+  margin-top: 80px;
+  margin-bottom: 80px;
+
+  border-radius: 3px;
+  border-bottom: 1px solid #eee;
+  border-top: 1px solid #eee;
+  border-left: 1px solid #eee;
+  border-right: 1px solid #eee;
+  background-color: white;
+}
 </style>

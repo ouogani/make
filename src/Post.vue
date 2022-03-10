@@ -57,9 +57,9 @@ export default {
 }
 
 .post-box{
-    margin-top: 70px;
-    margin-bottom: -50px;
-    background: rgb(247, 247, 247);
+    margin-top: 190px;
+    margin-bottom: -170px;
+   
     border-radius: 3px;
     border-bottom: 1px solid #eee;
     border-top: 1px solid #eee;

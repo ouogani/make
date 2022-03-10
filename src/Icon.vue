@@ -40,8 +40,9 @@ export default {
 <style>
 
 .user-pro{
-  padding-top: 12px;
+  margin-top: 9px;
   margin-left: 7px;
+  border: 4px black;
 }
 
 a {

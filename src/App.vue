@@ -30,12 +30,15 @@
   <Story :스토리="스토리[2]"/>
 </div>
     
+<div class="footer">
+  푸터 만들기
+</div>
 
 <div class="container">
 </div>
-    <Post :게시물="게시물[0]"/>
-    <Post :게시물="게시물[1]"/>
-    <Post :게시물="게시물[2]"/>
+  <Post :게시물="게시물[0]"/>
+  <Post :게시물="게시물[1]"/>
+  <Post :게시물="게시물[2]"/>
 </div>
   
 </template>
@@ -68,8 +71,24 @@ export default {
 
 <style>
 
-svg {
+.footer{
+  position: absolute;
+  margin-top: 80px;
+  margin-left: 520px;
+  height: 520px;
+  width: 300px;
+
+  position: fixed;
+
+  border: 1px solid;
+}
+
+.search-box>svg{
   margin-top: 12px;
+}
+
+svg {
+  margin-top: 8px;
   margin-left: 10px;
   margin-right: 10px;
 }
@@ -90,7 +109,7 @@ ul {
 }
 
 .logo{
-  margin-top: 5px;
+  margin-top: 10px;
   margin-right: 10px;
 }
 
@@ -102,10 +121,11 @@ ul {
   border: 1px solid rgb(247, 247, 247);
   padding-left: 10px;
   border-radius: 8px;
-  height: 40px;
+  height: 38px;
   display: flex;
   background-color:rgb(247, 247, 247);
   width: 300px;
+
 }
 
 input:focus { outline: none; }

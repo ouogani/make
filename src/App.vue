@@ -31,7 +31,15 @@
 </div>
     
 <div class="footer">
-  푸터 만들기
+  <div class="my-change">
+    <img src="https://img1.daumcdn.net/thumb/R300x0/?fname=https://k.kakaocdn.net/dn/c3vWTf/btqUuNfnDsf/VQMbJlQW4ywjeI8cUE91OK/img.jpg" class="my-pic" width="60" height="60"/>
+    <div class="f-user">
+      <p><strong>gaeun</strong>
+      가은</p>
+      <a href="#"><strong>전환</strong></a>
+    </div>
+    
+  </div>
 </div>
 
 <div class="container">
@@ -70,18 +78,6 @@ export default {
 </script>
 
 <style>
-
-.footer{
-  position: absolute;
-  margin-top: 80px;
-  margin-left: 520px;
-  height: 520px;
-  width: 300px;
-
-  position: fixed;
-
-  border: 1px solid;
-}
 
 .search-box>svg{
   margin-top: 12px;
@@ -159,4 +155,52 @@ input:focus { outline: none; }
   display: flex;
 
 }
+
+/* footer */
+.footer{
+    position: absolute;
+    margin-top: 80px;
+    margin-left: 520px;
+    height: 520px;
+    width: 300px;
+  
+    position: fixed;
+  
+    border: 1px solid;
+  }
+
+  .my-change{
+    width: 70px;
+    height: 70px;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    display: flex;
+}
+
+.my-pic{
+    border: 3px solid #eee;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    background-size: 100%;
+}
+
+.f-user{
+    font-size: 14px;
+    align-self: center;
+    margin-left: 10px;
+    display: flex;
+}
+
+.f-user>a{
+    margin-top: 10px;
+    width: 50px;
+    margin-left: 100px;
+    font-size: 12px;
+    color: dodgerblue;
+    text-decoration: none;
+}
+
+
   </style>

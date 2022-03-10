@@ -25,7 +25,9 @@
 
 
 <div class="story">
-스토리가 들어갈 자리
+  <Story :스토리="스토리[0]"/>
+  <Story :스토리="스토리[1]"/>
+  <Story :스토리="스토리[2]"/>
 </div>
     
 
@@ -43,6 +45,8 @@
 import Post from './Post';
 import postdata from './assets/postdata.js';
 import Icon from './Icon';
+import Story from './Story';
+import storydata from './assets/storydata.js';
 
 
 export default {
@@ -50,11 +54,14 @@ export default {
     data(){
       return{
         게시물: postdata, 
+        스토리: storydata,
       }
     },
     components: {
-      Post, Icon,
-    },
+    Post,
+    Icon,
+    Story,
+},
     
 }
 </script>
@@ -116,18 +123,20 @@ input:focus { outline: none; }
 }
 
 .story{
-  height: 100px;
+  height: 120px;
   width: 500px;
   
   position: absolute;
   margin-top: 80px;
-  margin-bottom: 80px;
 
   border-radius: 3px;
-  border-bottom: 1px solid #eee;
-  border-top: 1px solid #eee;
-  border-left: 1px solid #eee;
-  border-right: 1px solid #eee;
+  border-bottom: 1px solid gainsboro;
+  border-top: 1px solid gainsboro;
+  border-left: 1px solid gainsboro;
+  border-right: 1px solid gainsboro;
   background-color: white;
+
+  display: flex;
+
 }
-</style>
+  </style>

@@ -40,14 +40,6 @@ export default {
     margin-left: 5px;
 }
 
-.user-photo>img{
-    border: solid;
-    border-color: fuchsia;
-    border-radius: 50px;
-    margin-right: 10px;
-    align-items: center;
-}
-
 .user-name{
     display: block;
     float: left;
@@ -57,19 +49,17 @@ export default {
 }
 
 .post-box{
-    margin-top: 190px;
+    margin-top: 210px;
     margin-bottom: -170px;
    
     border-radius: 3px;
-    border-bottom: 1px solid #eee;
-    border-top: 1px solid #eee;
-    border-left: 1px solid #eee;
-    border-right: 1px solid #eee;
+    border-bottom: 1px solid gainsboro;
+    border-top: 1px solid gainsboro;
+    border-left: 1px solid gainsboro;
+    border-right: 1px solid gainsboro;
     background-color: white;
     width: 500px;
 }
-
-
 
 .post-content{
   margin-left: 15px;

@@ -4,7 +4,7 @@
 }
 .nav-box{
     background-color: white;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid gainsboro;
     height: 60px;
     width: 100vw;
     position: fixed;

@@ -37,14 +37,12 @@ export default {
 .user{
     height: 50px;
     padding: 10px;
+    margin-left: 5px;
 }
 
 .user-photo>img{
-    height: 30px;
-    width: 30px;
     border: solid;
     border-color: fuchsia;
-    padding: 1px;
     border-radius: 50px;
     margin-right: 10px;
     align-items: center;
@@ -54,7 +52,7 @@ export default {
     display: block;
     float: left;
     padding-left: 10px;
-    padding-top: 7px;
+    padding-top: 4px;
     font-size: 14px;
 }
 

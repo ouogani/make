@@ -1,4 +1,3 @@
-
 <template>
 <div class="backcolor">
 <div class="nav-box">
@@ -8,7 +7,7 @@
           <img src = "https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png" class="logo" >
         </ul>
     <ul class="col right">
-      아이콘들
+      <Icon/>
     </ul>
       <div class="col-md-0 search">
         <div class="search-box">
@@ -22,7 +21,6 @@
       </div>
     </div>
 </div>
-
 
 <div class="container main">
 
@@ -39,17 +37,19 @@
 
 <script>
 import Post from './Post';
-import postdata from './assets/postdata.js'
+import postdata from './assets/postdata.js';
+import Icon from './Icon';
+
 
 export default {
     name: "App",
     data(){
       return{
-        게시물: postdata,
+        게시물: postdata, 
       }
     },
     components: {
-      Post,
+      Post, Icon,
     },
     
 }
@@ -110,6 +110,5 @@ input:focus { outline: none; }
 .white{
   background-color: rgb(247, 247, 247);
 }
-
 
 </style>

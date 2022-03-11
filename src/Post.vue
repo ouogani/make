@@ -32,7 +32,6 @@
     <div class="post-icon">
       <div class="left">
         <a
-          href="#"
           @click="[$store.commit('좋아요업'), $store.commit('좋아요채우기')]"
           class="likesup"
         >
@@ -231,5 +230,9 @@ export default {
 .more {
   float: right;
   margin-left: 5px;
+}
+
+.left > a {
+  cursor: pointer;
 }
 </style>

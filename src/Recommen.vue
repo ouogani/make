@@ -7,9 +7,13 @@
     ></div>
 
     <div class="user-list">
-      <p>
-        <strong class="fb">{{ 추천.recommenName }}</strong> {{ 추천.recommenContent }}
-      </p>
+      <div class="recommen-nc">
+        <strong class="fb">
+          <a href="#">{{ 추천.recommenName }}</a>
+        </strong>
+        <div class="recommen-content">{{ 추천.recommenContent }}</div>
+      </div>
+
       <a href="#"><strong>팔로우</strong></a>
     </div>
   </div>
@@ -42,30 +46,42 @@ export default {
 }
 
 .user-list {
-  font-size: 14px;
+  font-size: 13px;
   align-self: center;
   margin-left: 10px;
   height: 50px;
-  width: 220px;
+  width: 320px;
   display: flex;
 }
 
-.user-list > p {
-  color: gray;
-  margin-left: 5px;
-  padding-top: 5px;
+.fb > a {
+  color: black;
+  text-decoration: none;
 }
 
-.fb {
-  color: black;
+.fb > a:hover {
+  text-decoration: underline;
 }
 
 .user-list > a {
-  margin-top: 20px;
+  margin-top: 15px;
   width: 100px;
-  margin-left: 118px;
+  margin-left: 172px;
   font-size: 12px;
   color: dodgerblue;
   text-decoration: none;
+}
+
+.recommen-nc {
+  flex-direction: column;
+  height: 40px;
+  width: 40px;
+  margin-top: 5px;
+}
+
+.recommen-content {
+  width: 250px;
+  color: gray;
+  font-size: 12px;
 }
 </style>

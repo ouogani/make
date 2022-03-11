@@ -184,7 +184,7 @@ input:focus {
   margin-top: 80px;
   margin-left: 520px;
   height: 520px;
-  width: 300px;
+  width: 400px;
 
   position: fixed;
 
@@ -227,17 +227,21 @@ input:focus {
 .f-user > a {
   margin-top: 10px;
   width: 50px;
-  margin-left: 100px;
+  margin-left: 140px;
   font-size: 12px;
   color: dodgerblue;
   text-decoration: none;
 }
 
 .recommen-header {
-  width: 260px;
+  width: 300px;
   margin-left: 20px;
   font-size: 14px;
   color: gray;
+}
+
+a {
+  text-decoration: none;
 }
 
 .recommen-header > span {
@@ -245,9 +249,5 @@ input:focus {
   margin-right: 3px;
   font-size: 12px;
   color: black;
-}
-
-a {
-  text-decoration: none;
 }
 </style>

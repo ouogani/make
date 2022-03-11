@@ -215,7 +215,6 @@ input:focus {
   margin-left: 640px;
   height: 520px;
   width: 400px;
-
   position: fixed;
 }
 

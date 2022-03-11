@@ -283,23 +283,23 @@ a {
 }
 
 .under-list > li {
-  color: gray;
+  color: rgb(182, 182, 182);
 }
 .under-list1 > li {
-  color: gray;
+  color: rgb(182, 182, 182);
 }
 .under-list2 > li {
-  color: gray;
+  color: rgb(182, 182, 182);
 }
 
 .under-list > li > a {
-  color: gray;
+  color: rgb(182, 182, 182);
 }
 .under-list1 > li > a {
-  color: gray;
+  color: rgb(182, 182, 182);
 }
 .under-list2 > li > a {
-  color: gray;
+  color: rgb(182, 182, 182);
 }
 
 .footer-end {

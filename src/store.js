@@ -5,6 +5,8 @@ const store = createStore({
         return {
             likes : 50,
             좋아요버튼 : false,
+            likecolor : 0,
+            좋아요채우기 : false,
         }
     },
 
@@ -16,6 +18,16 @@ const store = createStore({
             } else{
                 state.likes--;
                 state.좋아요버튼 = false;
+            }
+            
+        },
+        좋아요채우기(state){
+            if (state.좋아요채우기 == false){
+                state.likecolor++;
+                state.좋아요채우기 = true;
+            } else{
+                state.likecolor--;
+                state.좋아요채우기 = false;
             }
             
         },

@@ -36,9 +36,10 @@ export default {
 @import "style.css";
 
 .user {
-  height: 50px;
+  height: 60px;
   padding: 10px;
   margin-left: 5px;
+  margin-top: 5px;
 }
 
 .user-name {
@@ -52,6 +53,7 @@ export default {
 .post-box {
   margin-top: 210px;
   margin-bottom: -170px;
+  margin-left: 20px;
 
   border-radius: 3px;
   border-bottom: 1px solid gainsboro;
@@ -59,7 +61,7 @@ export default {
   border-left: 1px solid gainsboro;
   border-right: 1px solid gainsboro;
   background-color: white;
-  width: 500px;
+  width: 600px;
 }
 
 .post-content {
@@ -83,7 +85,7 @@ export default {
 }
 
 .post-img {
-  height: 450px;
+  height: 650px;
   background-position: center;
   background-size: cover;
 }

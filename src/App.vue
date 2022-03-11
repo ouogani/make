@@ -4,10 +4,12 @@
       <div class="container">
         <div calss="white">
           <ul class="col left">
-            <img
-              src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png"
-              class="logo"
-            />
+            <a href="#">
+              <img
+                src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png"
+                class="logo"
+              />
+            </a>
           </ul>
           <ul class="col right">
             <Icon />
@@ -32,44 +34,69 @@
         </div>
       </div>
     </div>
+    <div class="container">
+      <div class="story">
+        <Story :스토리="스토리[0]" />
+        <Story :스토리="스토리[1]" />
+        <Story :스토리="스토리[2]" />
+      </div>
 
-    <div class="story">
-      <Story :스토리="스토리[0]" />
-      <Story :스토리="스토리[1]" />
-      <Story :스토리="스토리[2]" />
-    </div>
+      <div class="footer">
+        <div class="my-change">
+          <img
+            src="https://img1.daumcdn.net/thumb/R300x0/?fname=https://k.kakaocdn.net/dn/c3vWTf/btqUuNfnDsf/VQMbJlQW4ywjeI8cUE91OK/img.jpg"
+            class="my-pic"
+            width="60"
+            height="60"
+          />
+          <div class="f-user">
+            <p><strong class="fb">gaeun</strong> 가은</p>
+            <a href="#"><strong>전환</strong></a>
+          </div>
+        </div>
+        <div class="recommen-header">
+          <strong>회원님을 위한 추천</strong>
+          <span
+            ><a href="#"><strong>모두보기</strong></a></span
+          >
+        </div>
 
-    <div class="footer">
-      <div class="my-change">
-        <img
-          src="https://img1.daumcdn.net/thumb/R300x0/?fname=https://k.kakaocdn.net/dn/c3vWTf/btqUuNfnDsf/VQMbJlQW4ywjeI8cUE91OK/img.jpg"
-          class="my-pic"
-          width="60"
-          height="60"
-        />
-        <div class="f-user">
-          <p><strong class="fb">gaeun</strong> 가은</p>
-          <a href="#"><strong>전환</strong></a>
+        <Recommen :추천="추천[0]" />
+        <Recommen :추천="추천[1]" />
+        <Recommen :추천="추천[2]" />
+        <Recommen :추천="추천[3]" />
+        <Recommen :추천="추천[4]" />
+
+        <ul class="footer-under">
+          <div class="under-list">
+            <li><a href="#">소개</a>.&nbsp;</li>
+            <li><a href="#">도움말</a>.&nbsp;</li>
+            <li><a href="#">홍보 센터</a>.&nbsp;</li>
+            <li><a href="#">API</a>.&nbsp;</li>
+            <li><a href="#">채용 정보</a>.&nbsp;</li>
+          </div>
+          <div class="under-list1">
+            <li><a href="#">개인정보처리방침</a>.&nbsp;</li>
+            <li><a href="#">약관</a>.&nbsp;</li>
+            <li><a href="#">위치</a>.&nbsp;</li>
+            <li><a href="#">인기 계정</a>.&nbsp;</li>
+            <li><a href="#">해시태그</a>.&nbsp;</li>
+          </div>
+          <div class="under-list2">
+            <li><a href="#">언어</a></li>
+          </div>
+        </ul>
+
+        <div class="footer-end">
+          <p>© 2022 INSTAGRAM FROM META</p>
         </div>
       </div>
-      <div class="recommen-header">
-        <strong>회원님을 위한 추천</strong>
-        <span
-          ><a href="#"><strong>모두보기</strong></a></span
-        >
-      </div>
 
-      <Recommen :추천="추천[0]" />
-      <Recommen :추천="추천[1]" />
-      <Recommen :추천="추천[2]" />
-      <Recommen :추천="추천[3]" />
-      <Recommen :추천="추천[4]" />
+      <div class="container"></div>
+      <Post :게시물="게시물[0]" />
+      <Post :게시물="게시물[1]" />
+      <Post :게시물="게시물[2]" />
     </div>
-
-    <div class="container"></div>
-    <Post :게시물="게시물[0]" />
-    <Post :게시물="게시물[1]" />
-    <Post :게시물="게시물[2]" />
   </div>
 </template>
 
@@ -112,6 +139,7 @@ svg {
 }
 .backcolor {
   background-color: rgb(247, 247, 247);
+  width: 100%;
 }
 
 body {
@@ -142,7 +170,8 @@ ul {
   height: 38px;
   display: flex;
   background-color: rgb(247, 247, 247);
-  width: 300px;
+  width: 260px;
+  margin-left: 160px;
 }
 
 input:focus {
@@ -163,10 +192,11 @@ input:focus {
 
 .story {
   height: 120px;
-  width: 500px;
+  width: 600px;
 
   position: absolute;
   margin-top: 80px;
+  margin-left: 20px;
 
   border-radius: 3px;
   border-bottom: 1px solid gainsboro;
@@ -182,13 +212,11 @@ input:focus {
 .footer {
   position: absolute;
   margin-top: 80px;
-  margin-left: 520px;
+  margin-left: 640px;
   height: 520px;
   width: 400px;
 
   position: fixed;
-
-  border: 1px solid;
 }
 
 .my-change {
@@ -201,7 +229,6 @@ input:focus {
 }
 
 .my-pic {
-  border: 0.5px solid rgb(102, 102, 102);
   border-radius: 50%;
   height: 60px;
   width: 60px;
@@ -240,14 +267,63 @@ input:focus {
   color: gray;
 }
 
-a {
-  text-decoration: none;
-}
-
 .recommen-header > span {
   float: right;
   margin-right: 3px;
   font-size: 12px;
-  color: black;
+}
+
+a {
+  text-decoration: none;
+}
+
+.footer-under {
+  font-size: 11px;
+  padding: 0;
+  margin: 20px;
+}
+
+.under-list > li {
+  color: gray;
+}
+.under-list1 > li {
+  color: gray;
+}
+.under-list2 > li {
+  color: gray;
+}
+
+.under-list > li > a {
+  color: gray;
+}
+.under-list1 > li > a {
+  color: gray;
+}
+.under-list2 > li > a {
+  color: gray;
+}
+
+.footer-end {
+  font-size: 11px;
+  color: rgb(182, 182, 182);
+  margin-left: 20px;
+}
+
+.under-list {
+  display: flex;
+  width: 100%;
+  height: 15px;
+  color: rgb(182, 182, 182);
+}
+
+.under-list1 {
+  display: flex;
+  width: 100%;
+  height: 15px;
+}
+.under-list2 {
+  display: flex;
+  width: 100%;
+  height: 15px;
 }
 </style>

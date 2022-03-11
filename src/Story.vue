@@ -2,7 +2,7 @@
   <div class="user-story">
     <div
       class="story-img"
-      :style="{ backgroundImage: `url(${스토리.recommenImage})` }"
+      :style="{ backgroundImage: `url(${스토리.storyImage})` }"
     ></div>
     <div class="story-name">{{ 스토리.storyName }}</div>
   </div>
@@ -20,17 +20,18 @@ export default {
 .user-story {
   width: 70px;
   height: 70px;
-  margin-left: 20px;
+  margin-left: 15px;
   margin-top: 20px;
   margin-bottom: 5px;
 }
 
 .story-img {
-  border: 3px solid #eee;
+  border: 2px solid #eee;
   border-radius: 50%;
   height: 60px;
   width: 60px;
   background-size: 100%;
+  margin-bottom: 5px;
 }
 
 .story-name {

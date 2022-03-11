@@ -17,7 +17,7 @@ export default[
       likes: 20,
       time: "2시간 전",
       liked: false,
-      content: "오늘 저녁 햄버거",
+      content: "내용1",
       filter: "clarendon"
     },
     {
@@ -27,7 +27,7 @@ export default[
       likes: 30,
       time: "3시간 전",
       liked: false,
-      content: "초코라떼 맛있다",
+      content: "내용2",
       filter: "lofi"
     }
   ]

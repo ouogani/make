@@ -1,6 +1,7 @@
 .container{
     padding-top: 10px;
-    
+    justify-content: center;
+    width: 1000px;
 }
 .nav-box{
     background-color: white;
@@ -21,11 +22,12 @@
 .left{
     float: left;
     padding: 0;
-    margin-left: 20px;
+    margin-left: 10px;
 }
 
 .right{
     float: right;
+    margin-right: 25px;
 }
 
 html{

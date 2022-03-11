@@ -31,7 +31,7 @@
     <div class="post-img" :style="{ backgroundImage: `url(${게시물.postImage})` }"></div>
     <div class="post-icon">
       <div class="left">
-        <a href="#">
+        <a href="#" @click="$store.commit('좋아요업')" class="likesup">
           <svg
             aria-label="좋아요"
             class="_8-yf5"
@@ -126,7 +126,7 @@
     </div>
     <div class="post-content">
       <p>
-        <strong>좋아요 {{ 게시물.likes }}개</strong>
+        <strong>좋아요 {{ $store.state.likes }}개</strong>
       </p>
       <p>
         <strong>{{ 게시물.name }}</strong> {{ 게시물.content }}

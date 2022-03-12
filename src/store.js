@@ -1,10 +1,11 @@
 import { createStore } from "vuex";
+import postdata from "./assets/postdata";
 
 const store = createStore({
     state (){
         return {
-            likes : [20, 27, 42],
             a : 0,
+            likes : [postdata[0].likes],
             좋아요버튼 : false,
             likecolor : 0,
             좋아요채우기 : false,

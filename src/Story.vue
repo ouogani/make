@@ -11,7 +11,7 @@
 <script>
 export default {
   props: {
-    스토리: Array,
+    스토리: Object,
   },
 };
 </script>

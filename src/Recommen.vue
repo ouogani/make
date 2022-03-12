@@ -22,7 +22,7 @@
 <script>
 export default {
   props: {
-    추천: Array,
+    추천: Object,
   },
 };
 </script>

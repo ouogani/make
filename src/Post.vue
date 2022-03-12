@@ -32,7 +32,7 @@
     <div class="post-icon">
       <div class="left">
         <a
-          @click="[$store.commit('좋아요업'), $store.commit('좋아요채우기')]"
+          @click="[$store.commit('좋아요업'), $store.commit('좋아요색')]"
           class="likesup"
         >
           <span v-if="$store.state.likecolor == 1">
@@ -70,7 +70,7 @@
           </span>
         </a>
 
-        <a href="#">
+        <a>
           <svg
             aria-label="댓글 달기"
             class="_8-yf5"
@@ -91,7 +91,7 @@
           </svg>
         </a>
 
-        <a href="#">
+        <a>
           <svg
             aria-label="게시물 공유"
             class="_8-yf5"
@@ -123,7 +123,7 @@
         </a>
       </div>
       <div class="right">
-        <a href="#">
+        <a>
           <svg
             aria-label="저장"
             class="_8-yf5"
@@ -148,7 +148,7 @@
     </div>
     <div class="post-content">
       <p>
-        <strong>좋아요 {{ $store.state.likes }}개</strong>
+        <strong> 좋아요 {{ $store.state.likes[$store.state.a] }}개</strong>
       </p>
       <p>
         <strong>{{ 게시물.name }}</strong> {{ 게시물.content }}
@@ -161,7 +161,7 @@
 <script>
 export default {
   props: {
-    게시물: Array,
+    게시물: Object,
   },
 };
 </script>
@@ -233,6 +233,10 @@ export default {
 }
 
 .left > a {
+  cursor: pointer;
+}
+
+.right > a {
   cursor: pointer;
 }
 </style>
